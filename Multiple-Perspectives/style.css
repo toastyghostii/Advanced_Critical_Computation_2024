@@ -1,0 +1,146 @@
+h1{
+    text-align: center;
+    font-family: adelia;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
+
+/* .info{
+    margin-right: 150px;
+} */
+body{
+    /* background-image: url(assets/light-green-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 20px; */
+    background-color: rgb(211, 242, 187);
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    overflow:hidden;
+    font-family: Fragmentcore;
+}
+
+ul {
+    margin-top: 0px;
+    padding: 3px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow:hidden;
+    background-color: transparent;
+  }
+  
+  li {
+    font-size: 1rem;
+    float: left; /* Float the list items to create a horizontal layout */
+    border-right: 1px solid rgb(0, 0, 0); /* Add a border between items */
+    padding-top:5px;
+    padding: 5px;
+    font-size: large;
+  }
+  
+   li:last-child {
+              border-right: none; /* Remove border from the last item */
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-right: 1px solid rgb(244,208,255);
+    padding:10px;
+  }
+  
+  .icon-container i {
+    font-size:24px;
+    margin-right: 5px; /*Add some right margin to create space between the icon and the next list item*/
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a:link {
+    color:black;
+  }
+  
+  a:visited {
+    color:black;
+  }
+  
+  a:hover{
+    color: white;
+  }
+
+@font-face {
+    font-family: adelia;
+    src: url(assets/adelia.otf);
+  }
+
+@font-face {
+    font-family: Fragmentcore;
+    src: url(assets/simplicity.ttf);
+}
+
+.home-nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    vertical-align: center;
+    padding: 15px;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.home-nav img{
+   max-width:300px;
+   margin-bottom: 15px;
+}
+
+/* .column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height:200px;
+    object-fit: contain;
+} */
+
+.page{
+    display: flex;
+    flex-direction: row;
+    white-space: balance;
+
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 10px;
+    margin: auto;
+    font-family: Fragmentcore;
+    font-size: auto;
+}
+
+.page img{
+    width: 50%;
+    height: auto;
+    margin-left: 150px;
+}
