@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bce9e8a158.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Amiibo Shelf</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href = "index.html"><i class="fa fa-home"></i></a></li>
+            <li><a href = "shelf.html"><i class="fa-solid fa-box-open"></i></a></li>
+        </ul>
+    </nav>
+    <h1>Your Digital Amiibo Collection!</h1>
+    <h3>What would you like to buy?</h3>
+    <form id="searchForm">
+        <label for="searchInput">Search by character:</label>
+        <input type="text" id="searchInput" name="searchInput">
+        <button type="submit">Search</button>
+      </form>
+    <div id="searchResults">
+    </div>
+    <script src="variables.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

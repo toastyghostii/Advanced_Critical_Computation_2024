@@ -1,0 +1,38 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow:hidden;
+  }
+
+  ul {
+    margin-top: 2px;
+    margin-left: 2px;
+    padding: 3px;
+    list-style: none;
+    display: flex;
+    overflow:hidden;
+    text-align: center;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  @font-face {
+    font-family: century-gothic;
+    src: url(Century-Gothic/Century\ Gothic.ttf);
+  }
+
+  @font-face {
+    font-family: century-gothic-bold;
+    src: url(Century-Gothic/GOTHICB0.TTF);
+  }
+ 
+  p{
+    font-family: century-gothic;
+  }
+
+  h1{
+    font-family: century-gothic-bold;
+  }
