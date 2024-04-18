@@ -40,6 +40,9 @@ document.getElementById("searchResults").addEventListener("input", function(even
       }
     }
     console.log("inventory:",inventoryItems);
+
+    let string = JSON.stringify(inventoryItems) 
+    localStorage.setItem("inventoryItems", string) 
 }
 })
 
@@ -62,6 +65,7 @@ function displayResults(data){
         const resultItem = document.createElement("div");
         resultItem.innerHTML = `
             <img src="${imgURL}" alt="${name}">
+            <br>
             <input type="checkbox" id="${objectIDs[i]}" name="${name}" value="${name}">
             <label for="amiibo${objectIDs[i]}"><strong>${name}</strong></label>
           `;
